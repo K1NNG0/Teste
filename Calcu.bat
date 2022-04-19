@@ -1,6 +1,7 @@
 set result=
 set oapp=0
 :calcu
+title %~n0
 call cnx
 cls
 cd %listapp%
