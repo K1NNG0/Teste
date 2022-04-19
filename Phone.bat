@@ -71,8 +71,10 @@ goto lapps
 if not exist C:\Windows\System32\wget.exe goto store0error
 cls
 cd %listapp%
+if exist Store.bat set oapp=9 && goto app
 wget -O Store.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/Store.bat
 wget -O cnwg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/cnwg.bat
+wget -O laystore.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/laystore.bat
 echo Store>app.ap9
 cd %home%
 wget -O cnwg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/cnwg.bat
