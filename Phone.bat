@@ -78,7 +78,7 @@ wget -O laystore.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/laystor
 echo Store>app.ap9
 cd %home%
 wget -O cnwg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/cnwg.bat
-goto apptest
+goto home
 
 :store0error
 set pg=%pg0%
