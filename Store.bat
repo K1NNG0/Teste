@@ -2,10 +2,10 @@ set oapp=0
 :store
 title %~n0
 call cnx
-cd %listapp%
-call cnwg
 cls
+cd %listapp%
 call laystore
+call cnwg
 cd %home%
 call Button 1 4 "%wg%" 11 4 "App Store" 20 0 "%date%" # Info
 call Button 1 8 " Calculadora " 1 11 " Email " 1 14 " Game Wallet " 1 0 "%web%" 10 27 "" 15 27 "" 20 27 "" # Press
