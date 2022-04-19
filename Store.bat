@@ -34,7 +34,7 @@ goto store
 
 :dlstore
 cd %listapp%
-if exist Calcu.bat goto rins
+if exist Store.bat goto rins
 if not exist app.ap1 set slot=1 && goto inststore
 if not exist app.ap2 set slot=2 && goto inststore
 if not exist app.ap3 set slot=3 && goto inststore
@@ -58,7 +58,7 @@ goto store
 
 :dlcalcu
 cd %listapp%
-if exist Calcu.bat goto rins
+if exist Calc.bat goto rins
 if not exist app.ap1 set slot=1 && goto instcalcu
 if not exist app.ap2 set slot=2 && goto instcalcu
 if not exist app.ap3 set slot=3 && goto instcalcu
