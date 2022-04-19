@@ -1,11 +1,12 @@
 set oapp=0
 :store
-cd %home%
 title %~n0
-call cnwg
 call cnx
+cd %listapp%
+call cnwg
 cls
 call laystore
+cd %home%
 call Button 1 4 "%wg%" 11 4 "App Store" 20 0 "%date%" # Info
 call Button 1 8 " App Store " 1 11 " Calculadora " 1 14 " Email " 1 17 " Game Wallet " 1 0 "%web%" 10 27 "" 15 27 "" 20 27 "" # Press
 Getinput /m %Press% /h 70
@@ -52,6 +53,7 @@ goto nomem
 cls
 cd %listapp%
 wget -O Store.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/Store.bat
+wget -O cnwg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/cnwg.bat
 echo Store>app.ap%slot%
 cd %home%
 wget -O cnwg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/cnwg.bat
