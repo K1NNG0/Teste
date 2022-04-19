@@ -49,10 +49,10 @@ goto nomem
 :inststore
 cls
 cd %listapp%
-wget -O Store.bat 
+wget -O Store.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/Store.bat
 echo Store>app.ap%slot%
 cd %home%
-wget -O cnwg.bat 
+wget -O cnwg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/cnwg.bat
 goto store
 
 :dlcalcu
