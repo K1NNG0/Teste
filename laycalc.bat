@@ -1,27 +1,5 @@
-echo.
-echo.
-echo.
-echo -----------------------------------
-echo.
-echo.
+batbox /g 0 3 /d "-----------------------------------"
+batbox /g 0 10 /d "-----------------------------------"
+batbox /g 0 26 /d "-----------------------------------"
+batbox /g 0 6
 echo %result%
-echo.
-echo.
-echo.
-echo -----------------------------------
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo -----------------------------------
