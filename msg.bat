@@ -1,5 +1,5 @@
 set oapp=0
-if not exist %home%\chat md %home%\chat
+if not exist "%home%\chat" md "%home%\chat"
 set chatapp=%home%\chat
 :chat
 title %~n0
