@@ -11,7 +11,7 @@ call Button 1 4 "%wg%" 11 4 "App Store" 20 0 "%date%" # Info
 call Button 1 8 " Mensagens " 1 11 " Musicas " 1 14 " Carteira " 1 17 " Calculadora " 1 0 "%web%" 10 27 "" 15 27 "" 20 27 "" # Press
 Getinput /m %Press% /h 70
 if %conn%==off goto noconn
-if %errorlevel%==1 goto store
+if %errorlevel%==1 goto dlmsg
 if %errorlevel%==2 goto store
 if %errorlevel%==3 goto store
 if %errorlevel%==4 goto dlcalcu
@@ -91,5 +91,29 @@ cd %listapp%
 wget -O Calc.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/Calcu.bat
 wget -O laycalc.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/laycalc.bat 
 echo Calc>app.ap%slot%
+cd %home%
+goto store
+
+:dlmsg
+cd %listapp%
+if exist msg.bat goto rins
+if not exist app.ap1 set slot=1 && goto insmsg
+if not exist app.ap2 set slot=2 && goto insmsg
+if not exist app.ap3 set slot=3 && goto insmsg
+if not exist app.ap4 set slot=4 && goto insmsg
+if not exist app.ap5 set slot=5 && goto insmsg
+if not exist app.ap6 set slot=6 && goto insmsg
+if not exist app.ap7 set slot=7 && goto insmsg
+if not exist app.ap8 set slot=8 && goto insmsg
+if not exist app.ap9 set slot=9 && goto insmsg
+cd %home%
+goto nomem
+
+:insmsg
+cls
+cd %listapp%
+wget -O msg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/msg.bat
+wget -O laymsg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/laymsg.bat
+echo  MSG>app.ap%slot%
 cd %home%
 goto store
