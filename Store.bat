@@ -114,6 +114,7 @@ cls
 cd %listapp%
 wget -O msg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/msg.bat
 wget -O laymsg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/laymsg.bat
+wget -O inimsg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/inimsg.bat
 echo  MSG>app.ap%slot%
 cd %home%
 goto store
