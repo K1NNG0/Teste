@@ -8,16 +8,17 @@ call laystore
 call cnwg
 cd %home%
 call Button 1 4 "%wg%" 11 4 "App Store" 20 0 "%date%" # Info
-call Button 1 8 " Calculadora " 1 11 " Email " 1 14 " Game Wallet " 1 0 "%web%" 10 27 "" 15 27 "" 20 27 "" # Press
+call Button 1 8 " Mensagens " 1 11 " Musicas " 1 14 " Carteira " 1 17 " Calculadora " 1 0 "%web%" 10 27 "" 15 27 "" 20 27 "" # Press
 Getinput /m %Press% /h 70
 if %conn%==off goto noconn
-if %errorlevel%==1 goto dlcalcu
+if %errorlevel%==1 goto store
 if %errorlevel%==2 goto store
 if %errorlevel%==3 goto store
-if %errorlevel%==4 call cnx
-if %errorlevel%==5 set lapp=0 && goto home
+if %errorlevel%==4 goto dlcalcu
+if %errorlevel%==5 call cnx
 if %errorlevel%==6 set lapp=0 && goto home
-if %errorlevel%==7 set lapp=1 && goto sanga
+if %errorlevel%==7 set lapp=0 && goto home
+if %errorlevel%==8 set lapp=1 && goto sanga
 goto store
 
 :noconn
