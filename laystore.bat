@@ -1,27 +1,3 @@
-echo.
-echo.
-echo.
-echo -----------------------------------
-echo.
-echo.
-echo.
-echo -----------------------------------
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo.
-echo -----------------------------------
+batbox /g 0 3 /d "-----------------------------------"
+batbox /g 0 7 /d "-----------------------------------"
+batbox /g 0 26 /d "-----------------------------------"
