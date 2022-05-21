@@ -1,14 +1,14 @@
 if not exist apps md apps
 cd %listapp%
-set app1=App 1
-set app2=App 2
-set app3=App 3
-set app4=App 4
-set app5=App 5
-set app6=App 6
-set app7=App 7
-set app8=App 8
-set app9=App 9
+set app1=-----
+set app2=-----
+set app3=-----
+set app4=-----
+set app5=-----
+set app6=-----
+set app7=-----
+set app8=-----
+set app9=-----
 if exist app.ap1 set/p app1=<app.ap1
 if exist app.ap2 set/p app2=<app.ap2
 if exist app.ap3 set/p app3=<app.ap3
