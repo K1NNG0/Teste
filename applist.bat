@@ -1,5 +1,9 @@
 if not exist apps md apps
 cd %listapp%
+echo cls>-----.bat
+echo cd %home% >>-----.bat
+echo cd.. >>-----.bat
+echo call Phone>>-----.bat
 set app1=-----
 set app2=-----
 set app3=-----
