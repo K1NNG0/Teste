@@ -13,7 +13,7 @@ Getinput /m %Press% /h 70
 if %conn%==off goto noconn
 if %errorlevel%==1 goto dlmsg
 if %errorlevel%==2 goto store
-if %errorlevel%==3 goto store
+if %errorlevel%==3 goto dlwallet
 if %errorlevel%==4 goto dlcalcu
 if %errorlevel%==5 call cnx
 if %errorlevel%==6 set lapp=0 && goto home
@@ -116,5 +116,29 @@ wget -O msg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/msg.bat
 wget -O laymsg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/laymsg.bat
 wget -O inimsg.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/inimsg.bat
 echo  MSG>app.ap%slot%
+cd %home%
+goto store
+
+
+:dlwallet
+cd %listapp%
+if exist wlt.bat goto rins
+if not exist app.ap1 set slot=1 && goto inswallet
+if not exist app.ap2 set slot=2 && goto inswallet
+if not exist app.ap3 set slot=3 && goto inswallet
+if not exist app.ap4 set slot=4 && goto inswallet
+if not exist app.ap5 set slot=5 && goto inswallet
+if not exist app.ap6 set slot=6 && goto inswallet
+if not exist app.ap7 set slot=7 && goto inswallet
+if not exist app.ap8 set slot=8 && goto inswallet
+if not exist app.ap9 set slot=9 && goto inswallet
+cd %home%
+goto nomem
+
+:inswallet
+cls
+cd %listapp%
+wget -O wlt.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/msg.bat
+echo  WLT>app.ap%slot%
 cd %home%
 goto store
