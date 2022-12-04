@@ -138,7 +138,8 @@ goto nomem
 :inswallet
 cls
 cd %listapp%
-wget -O wlt.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/msg.bat
+wget -O wlt.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/wlt.bat
+wget -O laywallet.bat https://raw.githubusercontent.com/K1NNG0/Teste/main/laywallet.bat
 echo  WLT>app.ap%slot%
 cd %home%
 goto store
